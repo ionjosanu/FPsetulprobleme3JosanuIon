@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPsetulprobleme3JosanuIon", "FPsetulprobleme3JosanuIon\FPsetulprobleme3JosanuIon.csproj", "{622E6C43-6F3C-4976-B75B-1AB84C4C88AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{622E6C43-6F3C-4976-B75B-1AB84C4C88AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622E6C43-6F3C-4976-B75B-1AB84C4C88AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622E6C43-6F3C-4976-B75B-1AB84C4C88AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622E6C43-6F3C-4976-B75B-1AB84C4C88AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA40255E-D5B9-43C7-8728-457B88F57DD9}
+	EndGlobalSection
+EndGlobal
