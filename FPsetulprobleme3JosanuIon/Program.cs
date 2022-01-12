@@ -31,17 +31,16 @@ namespace FPsetulprobleme3JosanuIon
                 case 11: Console.WriteLine("Conditia : Se da un numar natural n. Se cere sa se afiseze toate numerele prime mai mici sau egale cu n (ciurul lui Eratostene).  "); P11(); break;
                 case 12: Console.WriteLine("Conditia : Sortare selectie. Implementati algoritmul de sortare <Selection Sort>. "); P12(); break;
                 case 13: Console.WriteLine("Conditia : Sortare prin insertie. Implementati algoritmul de sortare <Insertion Sort>"); P13(); break;
-               //14 nu e facuta
+               
                 case 14: Console.WriteLine("Conditia : Interschimbati elementele unui vector in asa fel incat la final toate valorile egale cu zero sa ajunga la sfarsit. (nu se vor folosi vectori suplimentari - operatia se va realiza inplace cu un algoritm eficient - se va face o singura parcugere a vectorului). "); P14(); break;
                 case 15: Console.WriteLine("Conditia : Modificati un vector prin eliminarea elementelor care se repeta, fara a folosi un alt vector."); P15(); break;
-                case 16: Console.WriteLine("Conditia : Se da un vector de n numere naturale. Determinati cel mai mare divizor comun al elementelor vectorului."); P16(); break;
+                
+
+                default: Console.WriteLine("Ati introdus un numar care nu este de la 1 la 31 sau aceasta problema inca nu a fost rezolvata.)"); Console.ReadKey(); break;
             }
         }
 
-        private static void P16()
-        {
-            
-        }
+     
 
         private static void P15()
         {
@@ -88,11 +87,33 @@ namespace FPsetulprobleme3JosanuIon
 
         private static void P14()
         {
-            int[] vector = new int[10] {1,0, 0, 2, 3, 0, 4, 0, 5 , 0};
+            int[] vector = new int[10] {1, 0, 0, 2, 3, 0, 4, 0, 5, 0};
+            Console.WriteLine("Vectorul initial : ");
             for (int i = 0; i < vector.Length; i++)
             {
-
+                Console.Write(vector[i] + " ");
             }
+
+            for (int i = 0; i < vector.Length; i++)
+            {
+                if (vector[i] == 0)
+                {
+                    for (int j = i; j < vector.Length - 1; j++)
+                    {
+                        vector[j] = vector[j + 1];
+                    }
+                    vector[vector.Length - 1] = 0;
+                }
+
+              
+            }
+            Console.WriteLine();
+            Console.WriteLine("Vectorul final : ");
+            for (int i = 0; i < vector.Length; i++)
+            {
+                Console.Write(vector[i] + " ");
+            }
+            Console.ReadKey();
         }
 
         private static void P13()
